@@ -126,6 +126,8 @@ EOF
 
   systemctl enable --now docker
   systemctl restart docker
+  # 建立docker-compose軟鏈接
+  sudo ln -s /usr/libexec/docker/cli-plugins/docker-compose /bin/docker-compose
 
   # ====== 7. 防火牆 — 不使用 firewalld, 改用雲平台安全組 ======
   log "停用 firewalld, 改由雲平台安全組管理..."
