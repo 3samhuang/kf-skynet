@@ -98,14 +98,6 @@ main() {
   fi
   chmod 600 /root/.ssh/authorized_keys
 
-  local SSHD_CONF="/etc/ssh/sshd_config.d/99-init.conf"
-  cat > "${SSHD_CONF}" <<'EOF'
-PermitRootLogin prohibit-password
-PubkeyAuthentication yes
-PasswordAuthentication no
-EOF
-  sshd -t && systemctl restart sshd
-
   # ====== 6. Docker 安裝 ======
   log "安裝 Docker CE..."
   dnf install -y dnf-plugins-core

@@ -17,5 +17,5 @@ curl -fsSL https://raw.githubusercontent.com/3samhuang/kf-skynet/main/update-cla
 ```
 ** 初始化rocky-linux for aws & aliyun
 ```
-sudo bash <(curl -fsSL https://raw.githubusercontent.com/3samhuang/kf-skynet/main/rocky-linux-init.sh)
+curl -fsSL https://raw.githubusercontent.com/3samhuang/kf-skynet/main/rocky-linux-init.sh | sudo bash
 ```
