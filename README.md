@@ -15,3 +15,7 @@ $env:OTEL_TOKEN="xxxxx"; iex (iwr -useb https://raw.githubusercontent.com/3samhu
 curl -fsSL https://raw.githubusercontent.com/3samhuang/kf-skynet/main/update-claude-telemetry.sh \
   | OTEL_TOKEN=new-token-xxx bash
 ```
+** 初始化rocky-linux for aws & aliyun
+```
+sudo bash <(curl -fsSL https://raw.githubusercontent.com/3samhuang/kf-skynet/main/rocky-linux-init.sh)
+```
