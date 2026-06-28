@@ -17,11 +17,9 @@
 
   echo "Installing node_exporter v${LATEST_VERSION} (${ARCH})"
 
-  curl -sSL
-  "https://github.com/prometheus/node_exporter/releases/download/v${LATEST_VERSION}/node_exporter-${LATEST_VERSION}.linux-${ARCH}.tar.gz" |
-  \
-      sudo tar -xz -C /usr/local/bin --strip-components=1 \
-      "node_exporter-${LATEST_VERSION}.linux-${ARCH}/node_exporter"
+  curl -sSL "https://github.com/prometheus/node_exporter/releases/download/v${LATEST_VERSION}/node_exporter-${LATEST_VERSION}.linux-${ARCH}.tar.gz" | \
+    sudo tar -xz -C /usr/local/bin --strip-components=1 \
+    "node_exporter-${LATEST_VERSION}.linux-${ARCH}/node_exporter"
 
   sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
 
