@@ -19,3 +19,7 @@ curl -fsSL https://raw.githubusercontent.com/3samhuang/kf-skynet/main/update-cla
 ```
 curl -fsSL https://raw.githubusercontent.com/3samhuang/kf-skynet/main/rocky-linux-init.sh | sudo bash
 ```
+** 安裝node-exporter
+```
+curl -sSL https://raw.githubusercontent.com/3samhuang/kf-skynet/main/install-node-exporter.sh | sudo bash
+```
